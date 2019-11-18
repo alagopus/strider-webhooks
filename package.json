@@ -4,7 +4,8 @@
   "description": "Enables strider to fire webhooks based on certain events",
   "main": "webapp.js",
   "scripts": {
-    "test": "make test"
+    "test": "npm run test:lint",
+    "test:lint": "jshint --verbose *.js *.json static lib"
   },
   "repository": {
     "type": "git",
@@ -29,14 +30,14 @@
     }
   },
   "devDependencies": {
-    "less": "~1.4.2",
-    "jshint": "~2.3.0",
-    "mocha": "~1.13.0"
+    "jshint": "^2.10.3",
+    "less": "^3.10.3",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "bson": "^3.0.2",
     "crypto": "0.0.3",
     "querystring": "~0.2.0",
-    "superagent": "~0.15.4"
+    "superagent": "^5.1.0"
   }
 }
